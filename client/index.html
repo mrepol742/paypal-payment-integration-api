@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>paypal-payment-integration</title>
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/minstyle.io@2.0.1/dist/css/minstyle.io.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm"></div>
+      <div class="col-sm">
+        <h3 class="ms-text-center">Support Webvium</h3>
+        <div id="alerts" class="ms-text-center"></div>
+        <div id="loading" class="spinner-container ms-div-center">
+          <div class="spinner"></div>
+        </div>
+        <div id="content" class="hide">
+          <div class="ms-card ms-fill">
+            <div class="ms-card-content">
+              <video class="rounded mx-auto d-block img-fluid" controls loop style="width:400px">
+                <source
+                  src="//mrepol742.github.io/videos/Webvium%20-%20Lightweight,%20Fast,%20Material%20and%20Full-Featured%20Android%20Web%20Browser.mp4"
+                  type="video/mp4">
+                Your browser does not support the video tag. Click play to watch it directly <a
+                  href="//mrepol742.github.io/videos/Webvium%20-%20Lightweight,%20Fast,%20Material%20and%20Full-Featured%20Android%20Web%20Browser.mp4">Play</a>.
+              </video>
+            </div>
+          </div>
+          <div id="payment_options">
+            <form class="row ms-form-group" id="card-form">
+              <div>
+                <label for="email">Email</label>
+                <input value placeholder="username@email.com" type="email" id="email" class="div_input" required>
+              </div>
+              <div>
+                <label for="card-number">Card Number</label>
+                <div class="div_input" type="text" id="card-number"></div>
+              </div>
+              <div class="col-md mb-2">
+                <label for="expiration-date">Expiration Date</label>
+                <div id="expiration-date" class="div_input"></div>
+              </div>
+              <div class="col-md mb-2">
+                <label for="cvv">Security Code</label>
+                <div id="cvv" class="div_input"></div>
+              </div>
+              <div><input class="ms-fullwidth mt-2 ms-medium" type="submit" value="Purchase"></div>
+            </form>
+            <hr>
+            <hr>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm"></div>
+    </div>
+  </div>
+</body>
+
+</html>
