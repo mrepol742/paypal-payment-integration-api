@@ -17,7 +17,7 @@ Integrate Paypal Advanced Payment API (this is not available to all countries) p
   ```
 - Install dependencies
   ```sh
-  cd paypal-payment-integration/server && npm i
+  cd paypal-payment-integration && npm i
   ```
 - Configure .env
   ```sh
@@ -28,18 +28,6 @@ Integrate Paypal Advanced Payment API (this is not available to all countries) p
 - Run the project
   ```sh
   npm run start
-  ```
-- Now run the frontend
-  ```sh
-  cd .. && cd client
-  nano script.js
-  # Line 54 add your CLIENT_ID
-
-  # u can use python http
-  python3 -m http.server
-  # or vscode live server extension 
-  # it's up to you
-  # you can open the index.html in browser too
   ```
 
 ## Card testing

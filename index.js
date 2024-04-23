@@ -2,6 +2,7 @@ import "dotenv/config";
 import express from "express";
 import fetch from "node-fetch";
 import cors from "cors";
+import path from "path";
 
 const corsOptions = {
   origin: '*',
@@ -17,6 +18,7 @@ app.use(
   })
 );
 app.use(cors(corsOptions))
+app.use(express.static(path.join(process.cwd(), 'public')));
 
 const port = process.env.PORT || 3000;
 const environment = process.env.ENVIRONMENT || "sandbox";
